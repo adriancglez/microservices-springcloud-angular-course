@@ -9,39 +9,22 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.smoothiemx</groupId>
-    <artifactId>spring-cliente-servicio</artifactId>
+    <artifactId>spring-eureka</artifactId>
     <version>0.0.1</version>
-    <name>Spring_Cliente_Servicio</name>
+    <name>02_Spring_Eureka</name>
     <description>Demo project for Spring Boot</description>
-
     <properties>
         <java.version>11</java.version>
         <spring-cloud.version>Hoxton.SR7</spring-cloud.version>
     </properties>
-
     <dependencies>
         <dependency>
+            <groupId>org.glassfish.jaxb</groupId>
+            <artifactId>jaxb-runtime</artifactId>
+        </dependency>
+        <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-devtools</artifactId>
-            <scope>runtime</scope>
-            <optional>true</optional>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -55,15 +38,6 @@
             </exclusions>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
     <dependencyManagement>
         <dependencies>
             <dependency>
@@ -75,4 +49,14 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>

@@ -2,13 +2,13 @@ package com.smoothiemx.web.app;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
-@EnableEurekaClient
+@EnableEurekaServer
 @SpringBootApplication
-public class SpringClienteServicioApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringClienteServicioApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
